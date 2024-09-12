@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|c:\\rustamh\\downloads\\reeljett\\backend\\reeljett\\reeljett.persistence\\services\\personalmovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|solutionrelative:reeljett.persistence\\services\\personalmovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\rustamh\\downloads\\reeljett\\backend\\reeljett\\reeljett.webapi\\controllers\\basemoviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\controllers\\basemoviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|c:\\rustamh\\downloads\\reeljett\\backend\\reeljett\\reeljett.persistence\\services\\basemovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|solutionrelative:reeljett.persistence\\services\\basemovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseMovieService.cs",
+              "DocumentMoniker": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Persistence\\Services\\BaseMovieService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Persistence\\Services\\BaseMovieService.cs",
+              "ToolTip": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Persistence\\Services\\BaseMovieService.cs",
+              "RelativeToolTip": "ReelJett.Persistence\\Services\\BaseMovieService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T20:13:39.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BaseMovieController.cs",
+              "DocumentMoniker": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\BaseMovieController.cs",
+              "RelativeDocumentMoniker": "ReelJett.WebAPI\\Controllers\\BaseMovieController.cs",
+              "ToolTip": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\BaseMovieController.cs",
+              "RelativeToolTip": "ReelJett.WebAPI\\Controllers\\BaseMovieController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T20:13:18.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonalMovieService.cs",
+              "DocumentMoniker": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "ToolTip": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "RelativeToolTip": "ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAAwL8AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T08:12:42.538Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

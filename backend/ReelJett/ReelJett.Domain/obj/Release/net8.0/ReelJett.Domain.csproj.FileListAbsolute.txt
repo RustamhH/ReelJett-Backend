@@ -1,0 +1,15 @@
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\bin\Release\net8.0\ReelJett.Domain.deps.json
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\bin\Release\net8.0\ReelJett.Domain.runtimeconfig.json
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\bin\Release\net8.0\ReelJett.Domain.dll
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\bin\Release\net8.0\ReelJett.Domain.pdb
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.csproj.AssemblyReference.cache
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.AssemblyInfoInputs.cache
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.AssemblyInfo.cs
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.csproj.CoreCompileInputs.cache
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.sourcelink.json
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.dll
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\refint\ReelJett.Domain.dll
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.pdb
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ReelJett.Domain.genruntimeconfig.cache
+C:\Users\hasan\OneDrive\Документы\ReelJett\backend\ReelJett\ReelJett.Domain\obj\Release\net8.0\ref\ReelJett.Domain.dll
