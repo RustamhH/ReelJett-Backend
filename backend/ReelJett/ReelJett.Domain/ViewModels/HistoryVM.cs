@@ -9,4 +9,7 @@ public class HistoryVM {
     public double Rating { get; set; }
     public string Release_date { get; set; }
     public string Original_title { get; set; }
+    public int ViewCount { get; set; }
+    public int LikeCount { get; set; }
+    public int DislikeCount { get; set; }
 }

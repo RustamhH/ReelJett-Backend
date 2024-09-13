@@ -31,7 +31,7 @@ public class HistoryController : ControllerBase {
 
         var result = await _historyService.AddMovieToHistoryAsync(User.FindFirst(ClaimTypes.Name)?.Value!, movieId);
         if (result == "User not found") return BadRequest("User not found");
-        else if (result == "Contains") return Conflict("This movie already in history");
+        else if (result == "Contains") return Ok("This movie already in history");
         else return Ok("Movie Added To History!");
     }
 
@@ -50,6 +50,9 @@ public class HistoryController : ControllerBase {
                 Rating = m.Movie.Rating,
                 Release_date = m.Movie.Year,
                 Original_title = m.Movie.Title,
+                ViewCount=m.Movie.ViewCount,
+                LikeCount=m.Movie.LikeCount,
+                DislikeCount=m.Movie.DislikeCount
             }
         );
         return Ok(moviesVM);
