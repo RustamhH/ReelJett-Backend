@@ -136,11 +136,23 @@ public class PersonalMovieService : IPersonalMovieService {
 
     public async Task<List<UserOperationDTO>> GetUserCommentsAsync(string movieId)
     {
-        var movie=await _readRepo.GetByIdAsync(movieId);
-        if(movie!=null)
+        var movie = await _readRepo.GetByIdAsync(movieId);
+        var list = new List<UserOperationDTO>();
+        if (movie != null)
         {
+            foreach (var comment in movie.Comments)
+            {
+                list.Add(new UserOperationDTO()
+                {
+                    Id= comment.Id,
+                    OperationTime = comment.CreatedAt.ToString("dd/MM/yy HH:mm"),
+                    ProfilePhoto = comment.User.ProfilePhoto,
+                    Username = comment.User.UserName,
+                    Content ="-"+ comment.Content,
+                });
+            }
         }
-        return new List<UserOperationDTO>();
+        return list;
     }
 
     public async Task<List<UserOperationDTO>> GetUserDislikesAsync(string movieId)
@@ -155,7 +167,8 @@ public class PersonalMovieService : IPersonalMovieService {
                 {
                     list.Add(new UserOperationDTO()
                     {
-                        OperationTime = like.CreatedAt.ToString("dd/MM/yy HH:mm"),
+                        Id=like.Id,
+                        OperationTime = like.LastModifiedAt.ToString("dd/MM/yy HH:mm"),
                         ProfilePhoto=like.User.ProfilePhoto,
                         Username=like.User.UserName
                     });
@@ -178,7 +191,8 @@ public class PersonalMovieService : IPersonalMovieService {
                 {
                     list.Add(new UserOperationDTO()
                     {
-                        OperationTime = like.CreatedAt.ToString("dd/MM/yy HH:mm"),
+                        Id=like.Id,
+                        OperationTime = like.LastModifiedAt.ToString("dd/MM/yy HH:mm"),
                         ProfilePhoto = like.User.ProfilePhoto,
                         Username = like.User.UserName
                     });
@@ -199,6 +213,7 @@ public class PersonalMovieService : IPersonalMovieService {
             {
                 list.Add(new UserOperationDTO()
                 {
+                    Id=view.Id,
                     OperationTime = view.CreatedAt.ToString("dd/MM/yy HH:mm"),
                     ProfilePhoto = view.User.ProfilePhoto,
                     Username = view.User.UserName

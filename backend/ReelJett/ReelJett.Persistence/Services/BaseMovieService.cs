@@ -1,6 +1,7 @@
 ﻿using ReelJett.Application.Services;
 using ReelJett.Application.Repositories;
 using ReelJett.Domain.Entities.Concretes;
+using ReelJett.Domain.DTO;
 
 namespace ReelJett.Persistence.Services;
 
@@ -32,7 +33,7 @@ public class BaseMovieService:IBaseMovieService {
 
     // Methods
 
-    public async Task<Movie> SetLikeCount(string movieId, string username, bool isLikeButton) {
+    public async Task<LikeDTO> SetLikeCount(string movieId, string username, bool isLikeButton) {
 
         var movie = await _readRepo.GetByIdAsync(movieId);
         var user = await _readUserrepo.GetUserByUserName(username);
@@ -53,6 +54,7 @@ public class BaseMovieService:IBaseMovieService {
                         movie.DislikeCount += 1;
                         movie.LikeCount -= 1;
                         result.IsLike = false;
+                        result.LastModifiedAt = DateTime.Now;
                     }
                 }
                 else {
@@ -62,6 +64,7 @@ public class BaseMovieService:IBaseMovieService {
                         movie.DislikeCount -= 1;
                         movie.LikeCount += 1;
                         result.IsLike = true;
+                        result.LastModifiedAt = DateTime.Now;
                     }
                     else {
                         if (movie.DislikeCount != 0) {
@@ -71,6 +74,7 @@ public class BaseMovieService:IBaseMovieService {
                         }
                     }
                 }
+                await _writeLikerepo.UpdateAsync(result);
             }
             else {
 
@@ -86,9 +90,9 @@ public class BaseMovieService:IBaseMovieService {
                 else movie.DislikeCount += 1;
             }
             await _writeRepo.UpdateAsync(movie);
-            return movie;
+            return new LikeDTO() {LikeCount=movie.LikeCount,DislikeCount=movie.DislikeCount };
         }
-        else return null;
+        else return new LikeDTO();
     }
 
     public async Task<int> SetViewCount(string movieId, string username) {

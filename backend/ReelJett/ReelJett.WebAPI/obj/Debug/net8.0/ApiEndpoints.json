@@ -190,6 +190,27 @@
   },
   {
     "ContainingType": "ReelJett.WebAPI.Controllers.CommentController",
+    "Method": "DeleteUnwantedComment",
+    "RelativePath": "api/Comment/DeleteUnwantedComment",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movieid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "commentid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReelJett.WebAPI.Controllers.CommentController",
     "Method": "GetComments",
     "RelativePath": "api/Comment/GetComments",
     "HttpMethod": "GET",
