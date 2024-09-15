@@ -44,7 +44,6 @@ public class BaseMovieService:IBaseMovieService {
                 if (result.IsLike)  {
                     if (isLikeButton) {
                         if (movie.LikeCount != 0) {
-
                             movie.LikeCount -= 1;
                             await _writeLikerepo.DeleteAsync(result.Id);
                         }
@@ -68,13 +67,12 @@ public class BaseMovieService:IBaseMovieService {
                     }
                     else {
                         if (movie.DislikeCount != 0) {
-
                             movie.DislikeCount -= 1;
                             await _writeLikerepo.DeleteAsync(result.Id);
                         }
                     }
                 }
-                await _writeLikerepo.UpdateAsync(result);
+                
             }
             else {
 

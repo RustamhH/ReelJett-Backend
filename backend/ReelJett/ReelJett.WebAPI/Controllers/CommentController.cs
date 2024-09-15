@@ -50,4 +50,12 @@ public class CommentController : ControllerBase {
         await _commentService.DeleteUnwantedComment(movieid, commentid, User.FindFirst(ClaimTypes.Name)?.Value!);
         return Ok();
     }
+
+    [HttpDelete("DeleteComment")]
+    public async Task<IActionResult> DeleteComment([FromQuery] string commentid)
+    {
+        await _commentService.DeleteComment(commentid, User.FindFirst(ClaimTypes.Name)?.Value!);
+        return Ok();
+    }
+
 }

@@ -23,10 +23,18 @@ public class ContactController : ControllerBase {
 
     [HttpPost("SendEmailContact")]
     public async Task<IActionResult> SendEmailContact([FromBody] SendEmailContactDTO sendEmailContactDTO) {
-
-        _emailService.from = new System.Net.Mail.MailAddress(sendEmailContactDTO.Email);
-        await _emailService.sendMailAsync("reeljett@gmail.com", sendEmailContactDTO.Subject, sendEmailContactDTO.Body, true);
-        return Ok();
+        try
+        {
+            _emailService.from = new System.Net.Mail.MailAddress(sendEmailContactDTO.Email);
+            var result = await _emailService.sendMailAsync("reeljett@gmail.com", sendEmailContactDTO.Subject, sendEmailContactDTO.Body, true);
+            return Ok(result);
+        }
+        catch (Exception)
+        {
+            return Ok(false);
+        }
+        
+        
     }
 
 }

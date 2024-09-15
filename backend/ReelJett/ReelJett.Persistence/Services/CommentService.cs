@@ -49,7 +49,17 @@ public class CommentService : ICommentService {
     public async Task DeleteUnwantedComment(string movieId, string commentId, string username)
     {
         var comment = await _readCommentRepository.GetByIdAsync(commentId);
-        if(comment.MovieId==movieId && comment.User.UserName==username)
+        var movie = await _readRepo.GetByIdAsync(movieId);
+        if(comment.MovieId==movieId && movie.PersonalMovie.User.UserName==username)
+        {
+            await _writeCommentRepository.DeleteAsync(comment);
+        }
+    }
+
+    public async Task DeleteComment(string commentId, string username)
+    {
+        var comment = await _readCommentRepository.GetByIdAsync(commentId);
+        if (comment.User.UserName == username)
         {
             await _writeCommentRepository.DeleteAsync(comment);
         }

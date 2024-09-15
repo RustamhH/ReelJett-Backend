@@ -56,9 +56,15 @@ public class AuthService : IAuthService {
         var user = await _userManager.FindByNameAsync(loginDTO.Username);
         
         if (user is null)
+        {
             error = "Username is wrong";
-        else if (!user.EmailConfirmed) 
+            return new LoginVM() { Error = error };
+        }
+        else if (!user.EmailConfirmed)
+        {
             error = "Email not confirmed";
+            return new LoginVM() { Error = error };
+        }
 
         var roles = (await _userManager.GetRolesAsync(user)).ToList();
         var result = await _signInManager.PasswordSignInAsync(user, loginDTO.Password, false, false);

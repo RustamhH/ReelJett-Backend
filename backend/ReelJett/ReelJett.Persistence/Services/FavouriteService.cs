@@ -69,8 +69,9 @@ public class FavouriteService : IFavouriteService {
                 };
                 await _writeMovieItemRepo.AddAsync(movieItem);
             }
+            return 200;
         }
-        return 200;
+        return 401;
     }
 
     public async Task DeleteFromFavourites(string movieId) {

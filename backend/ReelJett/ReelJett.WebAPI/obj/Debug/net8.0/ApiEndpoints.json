@@ -190,6 +190,22 @@
   },
   {
     "ContainingType": "ReelJett.WebAPI.Controllers.CommentController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/Comment/DeleteComment",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "commentid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReelJett.WebAPI.Controllers.CommentController",
     "Method": "DeleteUnwantedComment",
     "RelativePath": "api/Comment/DeleteUnwantedComment",
     "HttpMethod": "DELETE",

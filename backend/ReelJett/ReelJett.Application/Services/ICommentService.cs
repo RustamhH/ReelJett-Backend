@@ -10,5 +10,6 @@ public interface ICommentService {
     Task<List<GetCommentDTO>> GetComments(string movieId);
     Task<int> SetCommentLikeCount(string commentId, string username);
     Task DeleteUnwantedComment(string commentId,string movieId,string username);
+    Task DeleteComment(string commentId,string username);
 
 }
