@@ -114,13 +114,19 @@ public class FavouriteService : IFavouriteService {
         if (user != null) {
 
             var favList = await _readFavRepo.GetWatchListByUserId(user.Id);
-            foreach (var movieItem in favList.Movies) {
+            if(favList!=null)
+            {
+                foreach (var movieItem in favList.Movies)
+                {
 
-                var movie = await _readRepo.GetByIdAsync(movieItem.MovieId);
-                if (movie.ProffesionalMovie != null) {
-                    List.Add(movie.Id);
+                    var movie = await _readRepo.GetByIdAsync(movieItem.MovieId);
+                    if (movie.ProffesionalMovie != null)
+                    {
+                        List.Add(movie.Id);
+                    }
                 }
             }
+            
         }
         return List;
 

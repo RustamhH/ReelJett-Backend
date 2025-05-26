@@ -8,6 +8,7 @@ using ReelJett.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 using ReelJett.Infrastructure.BackgroundServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace ReelJett.Infrastructure;
 

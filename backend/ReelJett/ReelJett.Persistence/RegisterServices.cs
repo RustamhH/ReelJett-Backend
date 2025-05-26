@@ -32,7 +32,8 @@ public static class RegisterServices {
             var builder = configurationBuilder.AddJsonFile("appsettings.json").Build();
 
             options.UseLazyLoadingProxies()
-                   .UseSqlServer(builder.GetConnectionString("AzureFree"));
+                   //.UseSqlServer(builder.GetConnectionString("AzureFree"));
+                   .UseSqlServer(builder.GetConnectionString("Default"));
         });
 
         // Register all Repository in Persistence

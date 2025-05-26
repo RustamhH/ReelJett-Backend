@@ -194,8 +194,8 @@ public class AuthService : IAuthService {
     private async Task SendConfirmEmail(RegisterDTO registerDTO, User newUser) {
 
         var confirmEmailToken = _tokenService.CreateConfirmEmailToken();
-        var actionUrl = $@"https://localhost:7109/api/Auth/ConfirmEmail?token={confirmEmailToken.Token}";
-        var result = await _emailService.sendMailAsync(registerDTO.Email, "Confirm Your Email", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
+        var actionUrl = $@"http://localhost:5124/api/Auth/ConfirmEmail?token={confirmEmailToken.Token}";
+        var result = await _emailService.sendMailAsync(registerDTO.Email, "Confirm Your Email", $"Confirm your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
         var userConfirmEmailToken = new UserToken() {
             UserId = newUser.Id,

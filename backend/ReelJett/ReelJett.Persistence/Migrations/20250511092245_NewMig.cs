@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ReelJett.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class initialize : Migration
+    public partial class NewMig : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -31,9 +31,14 @@ namespace ReelJett.Persistence.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Runtime = table.Column<int>(type: "int", nullable: false),
+                    Rating = table.Column<double>(type: "float", nullable: false),
                     LikeCount = table.Column<int>(type: "int", nullable: false),
                     ViewCount = table.Column<int>(type: "int", nullable: false),
+                    Poster = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     DislikeCount = table.Column<int>(type: "int", nullable: false),
+                    Year = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Categories = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -69,29 +74,9 @@ namespace ReelJett.Persistence.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Year = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Rated = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Released = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Runtime = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Director = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Writer = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Actors = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Plot = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Language = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Country = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Awards = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Poster = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Metascore = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    imdbRating = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    imdbVotes = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    imdbID = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DVD = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    BoxOffice = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Production = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Website = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Response = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TRDublaj = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    TRAltyazi = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    MultipleUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     MovieId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -116,7 +101,6 @@ namespace ReelJett.Persistence.Migrations
                     Source = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Value = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     MovieId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ProffesionalMovieId = table.Column<string>(type: "nvarchar(450)", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -130,11 +114,6 @@ namespace ReelJett.Persistence.Migrations
                         principalTable: "Movies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Ratings_ProffesionalMovies_ProffesionalMovieId",
-                        column: x => x.ProffesionalMovieId,
-                        principalTable: "ProffesionalMovies",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -189,6 +168,8 @@ namespace ReelJett.Persistence.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Lastname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Firstname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -270,7 +251,6 @@ namespace ReelJett.Persistence.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    MovieId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -284,12 +264,6 @@ namespace ReelJett.Persistence.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_HistoryLists_Movies_MovieId",
-                        column: x => x.MovieId,
-                        principalTable: "Movies",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -297,7 +271,7 @@ namespace ReelJett.Persistence.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Poster = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
+                    IsPublished = table.Column<bool>(type: "bit", nullable: false),
                     MovieLink = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UploadDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -348,12 +322,90 @@ namespace ReelJett.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "UserLikes",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    IsLike = table.Column<bool>(type: "bit", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    MovieId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserLikes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserLikes_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_UserLikes_Movies_MovieId",
+                        column: x => x.MovieId,
+                        principalTable: "Movies",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserTokens",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Token = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ExpireTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserTokens", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserTokens_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UserViews",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    MovieId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserViews", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_UserViews_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_UserViews_Movies_MovieId",
+                        column: x => x.MovieId,
+                        principalTable: "Movies",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "WatchLists",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    MovieId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -367,12 +419,61 @@ namespace ReelJett.Persistence.Migrations
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "CommentsLikes",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CommentId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    UserId = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_CommentsLikes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_WatchLists_Movies_MovieId",
+                        name: "FK_CommentsLikes_Comments_CommentId",
+                        column: x => x.CommentId,
+                        principalTable: "Comments",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "MovieItem",
+                columns: table => new
+                {
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    MovieId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    WatchListId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    HistoryListId = table.Column<string>(type: "nvarchar(450)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    LastModifiedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_MovieItem", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_MovieItem_HistoryLists_HistoryListId",
+                        column: x => x.HistoryListId,
+                        principalTable: "HistoryLists",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_MovieItem_Movies_MovieId",
                         column: x => x.MovieId,
                         principalTable: "Movies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_MovieItem_WatchLists_WatchListId",
+                        column: x => x.WatchListId,
+                        principalTable: "WatchLists",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -430,14 +531,30 @@ namespace ReelJett.Persistence.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_HistoryLists_MovieId",
-                table: "HistoryLists",
-                column: "MovieId");
+                name: "IX_CommentsLikes_CommentId",
+                table: "CommentsLikes",
+                column: "CommentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_HistoryLists_UserId",
                 table: "HistoryLists",
-                column: "UserId");
+                column: "UserId",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MovieItem_HistoryListId",
+                table: "MovieItem",
+                column: "HistoryListId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MovieItem_MovieId",
+                table: "MovieItem",
+                column: "MovieId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_MovieItem_WatchListId",
+                table: "MovieItem",
+                column: "WatchListId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_PersonalMovies_MovieId",
@@ -462,24 +579,40 @@ namespace ReelJett.Persistence.Migrations
                 column: "MovieId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Ratings_ProffesionalMovieId",
-                table: "Ratings",
-                column: "ProffesionalMovieId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Rooms_UserId",
                 table: "Rooms",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_WatchLists_MovieId",
-                table: "WatchLists",
+                name: "IX_UserLikes_MovieId",
+                table: "UserLikes",
                 column: "MovieId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserLikes_UserId",
+                table: "UserLikes",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserTokens_UserId",
+                table: "UserTokens",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserViews_MovieId",
+                table: "UserViews",
+                column: "MovieId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserViews_UserId",
+                table: "UserViews",
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_WatchLists_UserId",
                 table: "WatchLists",
-                column: "UserId");
+                column: "UserId",
+                unique: true);
 
             migrationBuilder.AddForeignKey(
                 name: "FK_AspNetUserClaims_AspNetUsers_UserId",
@@ -536,25 +669,40 @@ namespace ReelJett.Persistence.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "CommentsLikes");
+
+            migrationBuilder.DropTable(
+                name: "MovieItem");
+
+            migrationBuilder.DropTable(
+                name: "PersonalMovies");
+
+            migrationBuilder.DropTable(
+                name: "ProffesionalMovies");
+
+            migrationBuilder.DropTable(
+                name: "Ratings");
+
+            migrationBuilder.DropTable(
+                name: "UserLikes");
+
+            migrationBuilder.DropTable(
+                name: "UserTokens");
+
+            migrationBuilder.DropTable(
+                name: "UserViews");
+
+            migrationBuilder.DropTable(
+                name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
                 name: "Comments");
 
             migrationBuilder.DropTable(
                 name: "HistoryLists");
 
             migrationBuilder.DropTable(
-                name: "PersonalMovies");
-
-            migrationBuilder.DropTable(
-                name: "Ratings");
-
-            migrationBuilder.DropTable(
                 name: "WatchLists");
-
-            migrationBuilder.DropTable(
-                name: "AspNetRoles");
-
-            migrationBuilder.DropTable(
-                name: "ProffesionalMovies");
 
             migrationBuilder.DropTable(
                 name: "Movies");

@@ -389,6 +389,11 @@
         "Name": "title",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "language",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -467,6 +472,42 @@
         "Name": "moviesPerPage",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "language",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReelJett.WebAPI.Controllers.MovieController",
+    "Method": "GetSearchedPerson",
+    "RelativePath": "api/Movie/GetSearchedPerson",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "personPerPage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "language",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -500,16 +541,6 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [
-      {
-        "Name": "page",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "moviesPerPage",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
       {
         "Name": "language",
         "Type": "System.String",

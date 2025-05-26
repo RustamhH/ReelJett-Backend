@@ -12,8 +12,8 @@ using ReelJett.Persistence.DbContexts;
 namespace ReelJett.Persistence.Migrations
 {
     [DbContext(typeof(ReelJettDbContext))]
-    [Migration("20240826143225_mig_11")]
-    partial class mig_11
+    [Migration("20250511092712_pfpnullable")]
+    partial class pfpnullable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -199,6 +199,35 @@ namespace ReelJett.Persistence.Migrations
                     b.ToTable("Comments");
                 });
 
+            modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.CommentLikes", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CommentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("LastModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CommentId");
+
+                    b.ToTable("CommentsLikes");
+                });
+
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.HistoryList", b =>
                 {
                     b.Property<string>("Id")
@@ -265,6 +294,10 @@ namespace ReelJett.Persistence.Migrations
 
                     b.Property<int>("ViewCount")
                         .HasColumnType("int");
+
+                    b.Property<string>("Year")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -334,10 +367,6 @@ namespace ReelJett.Persistence.Migrations
                     b.Property<string>("MovieLink")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<byte[]>("Poster")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
 
                     b.Property<DateTime>("UploadDate")
                         .HasColumnType("datetime2");
@@ -521,7 +550,6 @@ namespace ReelJett.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ProfilePhoto")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RoomId")
@@ -550,6 +578,38 @@ namespace ReelJett.Persistence.Migrations
                     b.HasIndex("RoomId");
 
                     b.ToTable("AspNetUsers", (string)null);
+                });
+
+            modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserLikes", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsLike")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("LastModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MovieId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserLikes");
                 });
 
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserToken", b =>
@@ -586,6 +646,35 @@ namespace ReelJett.Persistence.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserTokens");
+                });
+
+            modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserViews", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("LastModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MovieId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserViews");
                 });
 
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.WatchList", b =>
@@ -684,6 +773,17 @@ namespace ReelJett.Persistence.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.CommentLikes", b =>
+                {
+                    b.HasOne("ReelJett.Domain.Entities.Concretes.Comment", "Comment")
+                        .WithMany("CommentLikes")
+                        .HasForeignKey("CommentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Comment");
+                });
+
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.HistoryList", b =>
                 {
                     b.HasOne("ReelJett.Domain.Entities.Concretes.User", "User")
@@ -780,6 +880,22 @@ namespace ReelJett.Persistence.Migrations
                     b.Navigation("Room");
                 });
 
+            modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserLikes", b =>
+                {
+                    b.HasOne("ReelJett.Domain.Entities.Concretes.Movie", "Movie")
+                        .WithMany("UserLikes")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("ReelJett.Domain.Entities.Concretes.User", "User")
+                        .WithMany("UserLikes")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserToken", b =>
                 {
                     b.HasOne("ReelJett.Domain.Entities.Concretes.User", "User")
@@ -787,6 +903,22 @@ namespace ReelJett.Persistence.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserViews", b =>
+                {
+                    b.HasOne("ReelJett.Domain.Entities.Concretes.Movie", "Movie")
+                        .WithMany("UserViews")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("ReelJett.Domain.Entities.Concretes.User", "User")
+                        .WithMany("UserViews")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("Movie");
 
                     b.Navigation("User");
                 });
@@ -802,6 +934,11 @@ namespace ReelJett.Persistence.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.Comment", b =>
+                {
+                    b.Navigation("CommentLikes");
+                });
+
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.HistoryList", b =>
                 {
                     b.Navigation("Movies");
@@ -814,6 +951,10 @@ namespace ReelJett.Persistence.Migrations
                     b.Navigation("PersonalMovie");
 
                     b.Navigation("ProffesionalMovie");
+
+                    b.Navigation("UserLikes");
+
+                    b.Navigation("UserViews");
                 });
 
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.Room", b =>
@@ -831,7 +972,11 @@ namespace ReelJett.Persistence.Migrations
 
                     b.Navigation("Rooms");
 
+                    b.Navigation("UserLikes");
+
                     b.Navigation("UserTokens");
+
+                    b.Navigation("UserViews");
 
                     b.Navigation("WatchList");
                 });

@@ -71,7 +71,7 @@ public class MovieController : ControllerBase {
     }
 
     [HttpGet("GetUpcomingMovies")]
-    public async Task<IActionResult> GetUpcomingMovies([FromQuery] int page, int moviesPerPage, string language) {
+    public async Task<IActionResult> GetUpcomingMovies([FromQuery] string language) {
 
         var options = new RestClientOptions($"https://api.themoviedb.org/3/movie/upcoming?language={language}&page=1");
         var client = new RestClient(options);
@@ -120,7 +120,7 @@ public class MovieController : ControllerBase {
     }
 
     [HttpGet("GetMovieDetails")]
-    public async Task<IActionResult> GetMovieDetails([FromQuery] int movieid, string title) {
+    public async Task<IActionResult> GetMovieDetails([FromQuery] int movieid, string title,string language) {
 
         var movie = await _readMovieRepository.GetByIdAsync(movieid.ToString());
 
@@ -149,9 +149,9 @@ public class MovieController : ControllerBase {
                 Categories = movie.Categories,
             };
             return Ok(movieDetailsVM);
-       }
+        }
  
-        var options = new RestClientOptions($"https://api.themoviedb.org/3/movie/{movieid}?language=en-US");
+        var options = new RestClientOptions($"https://api.themoviedb.org/3/movie/{movieid}?language={language}");
         var client = new RestClient(options);
         var request = new RestRequest("");
         request.AddHeader("accept", "application/json");
@@ -182,9 +182,9 @@ public class MovieController : ControllerBase {
     }
 
     [HttpGet("GetSearchedMovie")]
-    public async Task<IActionResult> GetSearchedMovie([FromQuery] string query, int page, int moviesPerPage) {
+    public async Task<IActionResult> GetSearchedMovie([FromQuery] string query, int page, int moviesPerPage,string language) {
 
-        var options = new RestClientOptions($"https://api.themoviedb.org/3/search/movie?query={query}&include_adult=false&language=en-US&page=1");
+        var options = new RestClientOptions($"https://api.themoviedb.org/3/search/movie?query={query}&include_adult=false&language={language}&page={page}");
         var client = new RestClient(options);
         var request = new RestRequest("");
         request.AddHeader("accept", "application/json");
@@ -208,6 +208,39 @@ public class MovieController : ControllerBase {
         };
         return Ok(movieVM);
     }
+
+    [HttpGet("GetSearchedPerson")]
+    public async Task<IActionResult> GetSearchedPerson([FromQuery] string query, int page, int personPerPage, string language)
+    {
+
+        var options = new RestClientOptions($"https://api.themoviedb.org/3/search/person?query={query}&include_adult=false&language={language}&page={page}");
+        var client = new RestClient(options);
+        var request = new RestRequest("");
+        request.AddHeader("accept", "application/json");
+        request.AddHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwN2I3OWYxNmU2NWFmMGY1YTBjNGY4ZGFkZDdkMDhjNCIsIm5iZiI6MTcyMjQ2NjU2OC41MDQ1NjksInN1YiI6IjY0YjA0MzFjMjBlY2FmMDBjNmY2MWQ1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.84Lcw6zUKyCbEv5YfDetGmzWCWPQWBzr-sZ_xdiRXxY");
+        var response = await client.GetAsync(request);
+        var persondata = JsonSerializer.Deserialize<PersonData>(response.Content!);
+        var people = persondata?.results.ToList();
+
+        var filteredPeople = new List<PersonDTO>();
+        for (int i = (page - 1) * personPerPage; i < page * personPerPage; i++)
+        {
+            if (i == people.Count) break;
+            filteredPeople.Add(people[i]);
+        }
+
+        var personVM = new PersonVM()
+        {
+            People = filteredPeople,
+            TotalPages = (people.Count % personPerPage == 0) ?
+                            (people.Count / personPerPage)
+                         :
+                            (people.Count / personPerPage) + 1,
+        };
+        return Ok(personVM);
+    }
+
+
 
     [HttpGet("GetMovieEmbedLink")]
     public async Task<IActionResult> GetMovieEmbedLink([FromQuery] int movieid, string title, string year) {

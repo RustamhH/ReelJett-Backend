@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj": {}
+    "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj": {}
   },
   "projects": {
-    "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj": {
+    "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj",
         "projectName": "ReelJett.Domain",
-        "projectPath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj",
+        "projectPath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\ReelJett.Domain.csproj",
         "packagesPath": "C:\\Users\\RustamHasanli\\.nuget\\packages\\",
-        "outputPath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Domain\\obj\\",
+        "outputPath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RustamHasanli\\AppData\\Roaming\\NuGet\\NuGet.Config",

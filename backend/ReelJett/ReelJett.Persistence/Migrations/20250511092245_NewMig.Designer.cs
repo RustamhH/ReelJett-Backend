@@ -12,8 +12,8 @@ using ReelJett.Persistence.DbContexts;
 namespace ReelJett.Persistence.Migrations
 {
     [DbContext(typeof(ReelJettDbContext))]
-    [Migration("20240903164504_mig_13")]
-    partial class mig_13
+    [Migration("20250511092245_NewMig")]
+    partial class NewMig
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -367,10 +367,6 @@ namespace ReelJett.Persistence.Migrations
                     b.Property<string>("MovieLink")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<byte[]>("Poster")
-                        .IsRequired()
-                        .HasColumnType("varbinary(max)");
 
                     b.Property<DateTime>("UploadDate")
                         .HasColumnType("datetime2");
@@ -888,8 +884,9 @@ namespace ReelJett.Persistence.Migrations
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserLikes", b =>
                 {
                     b.HasOne("ReelJett.Domain.Entities.Concretes.Movie", "Movie")
-                        .WithMany()
-                        .HasForeignKey("MovieId");
+                        .WithMany("UserLikes")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("ReelJett.Domain.Entities.Concretes.User", "User")
                         .WithMany("UserLikes")
@@ -914,8 +911,9 @@ namespace ReelJett.Persistence.Migrations
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.UserViews", b =>
                 {
                     b.HasOne("ReelJett.Domain.Entities.Concretes.Movie", "Movie")
-                        .WithMany()
-                        .HasForeignKey("MovieId");
+                        .WithMany("UserViews")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("ReelJett.Domain.Entities.Concretes.User", "User")
                         .WithMany("UserViews")
@@ -954,6 +952,10 @@ namespace ReelJett.Persistence.Migrations
                     b.Navigation("PersonalMovie");
 
                     b.Navigation("ProffesionalMovie");
+
+                    b.Navigation("UserLikes");
+
+                    b.Navigation("UserViews");
                 });
 
             modelBuilder.Entity("ReelJett.Domain.Entities.Concretes.Room", b =>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OSVBNKlVwCKE8lly7XmPrLlb9FhvRCtm1LMIxG2fWVoIcZTuPnLi5LQYNe9GMI7qRvqPsmmUB/b9zMrM4Wfnbw==",
+  "dgSpecHash": "QYlFDoZIIObMyLBh93l1KdGSC6cvZjGI3ULYfpqizbkxGgZa58YwA0/FerFmCCmbqwOqWutsrkWzn2WsE5a0iw==",
   "success": true,
-  "projectFilePath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Persistence\\ReelJett.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\ReelJett.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RustamHasanli\\.nuget\\packages\\azure.core\\1.41.0\\azure.core.1.41.0.nupkg.sha512",
     "C:\\Users\\RustamHasanli\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

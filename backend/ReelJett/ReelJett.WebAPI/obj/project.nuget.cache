@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2JWTxs/g++mX7MvokfJW++jA1yr4FGAtIAEaDk9j3JPdqHqeOhPMM8ysf8QdPqsh/KuL/b5erw0JfyCpnYoCvw==",
+  "dgSpecHash": "5uKZ35Jxy/V28V/XNApeOFaQ+kmWukv36kX4MYKGtFOnixFQs2mbh0TQe0Ji5zegsQ5Zmoj+/Pqd3LR8KKbZ4w==",
   "success": true,
-  "projectFilePath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.WebAPI\\ReelJett.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\ReelJett.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RustamHasanli\\.nuget\\packages\\azure.core\\1.41.0\\azure.core.1.41.0.nupkg.sha512",
     "C:\\Users\\RustamHasanli\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iPu3Cb/hGUZIdoMtOu272Uuajkn4j9gRzVfdnoqyC2fONp95i8OE+34Xg+O5SKoH60HjMzh+MqDhw/QAnJO0tw==",
+  "dgSpecHash": "WqYi+noVe/FDvoUonoFPJ2gwLycUk4nC2krmRCNJdGeVPqcKQSSu36As9s+9iowO3kKKvQMOPTWSb6OYergacA==",
   "success": true,
-  "projectFilePath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RustamHasanli\\.nuget\\packages\\azure.core\\1.41.0\\azure.core.1.41.0.nupkg.sha512",
     "C:\\Users\\RustamHasanli\\.nuget\\packages\\azure.storage.blobs\\12.21.2\\azure.storage.blobs.12.21.2.nupkg.sha512",

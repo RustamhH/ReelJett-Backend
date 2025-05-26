@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReelJett.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a819c93bfda048927e5c69c073cb2d7c05b9f7bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9490f10917e9eaaf695bec2f11af3aa463149e78")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReelJett.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReelJett.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

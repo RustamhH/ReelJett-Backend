@@ -12,7 +12,7 @@ public class User : IdentityUser, IBaseEntity {
     public bool IsDeleted { get; set; } = false;
     public DateTime CreatedAt { get; set; } = DateTime.Now;
     public DateTime LastModifiedAt { get; set; } = DateTime.Now;
-    public string ProfilePhoto { get; set; }
+    public string ?ProfilePhoto { get; set; }
 
     // Foreign Key
 

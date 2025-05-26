@@ -3722,11 +3722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj",
       "projectName": "ReelJett.Infrastructure",
-      "projectPath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\RustamHasanli\\.nuget\\packages\\",
-      "outputPath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RustamHasanli\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3743,8 +3743,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Application\\ReelJett.Application.csproj": {
-              "projectPath": "C:\\RustamH\\Downloads\\ReelJett\\backend\\ReelJett\\ReelJett.Application\\ReelJett.Application.csproj"
+            "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Application\\ReelJett.Application.csproj": {
+              "projectPath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Application\\ReelJett.Application.csproj"
             }
           }
         }

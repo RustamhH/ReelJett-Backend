@@ -17,7 +17,7 @@ builder.Services.AddCors(options => {
     options.AddPolicy("CorsPolicy", builder => {
         builder.WithOrigins("https://localhost:5173") // Local frontend URL
                .WithOrigins("https://reeljett.com") // Your frontend URL
-               .WithOrigins("http://localhost:5173") // Local frontend URL
+               .WithOrigins("http://localhost:5173") // Local frontend URLs
                .AllowAnyMethod()
                .AllowAnyHeader()
                .AllowCredentials();
@@ -33,10 +33,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //// Swagger Auth Options
-//builder.Services.AddSwaggerGen(option => {
+//builder.Services.AddSwaggerGen(option =>
+//{
 
 //    option.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
-//    option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme {
+//    option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+//    {
 //        In = ParameterLocation.Header,
 //        Description = "Please enter a valid token",
 //        Name = "Authorization",
@@ -66,6 +68,8 @@ if (app.Environment.IsDevelopment()) {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
 
 app.UseHttpsRedirection();
 

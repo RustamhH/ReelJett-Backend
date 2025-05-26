@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ReelJett.Application.Services;
 
@@ -20,10 +21,8 @@ public class FavouriteController : ControllerBase {
     }
 
     // Methods
-
     [HttpPost("AddToFavourites")]
     public async Task<IActionResult> AddToFavourites([FromQuery] string movieId) {
-
         var statusCode = await _favouriteService.AddToFavourites(User.FindFirst(ClaimTypes.Name)?.Value!, movieId);
         return Ok(statusCode);
     }

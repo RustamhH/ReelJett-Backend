@@ -547,7 +547,6 @@ namespace ReelJett.Persistence.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ProfilePhoto")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RoomId")
