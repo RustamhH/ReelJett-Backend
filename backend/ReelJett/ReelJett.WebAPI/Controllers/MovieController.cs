@@ -94,6 +94,33 @@ public class MovieController : ControllerBase {
         return Ok(movieVM);
     }
 
+
+    [HttpGet("GetTopRatedMovies")]
+    public async Task<IActionResult> GetTopRatedMovies([FromQuery] string language)
+    {
+
+        var options = new RestClientOptions($"https://api.themoviedb.org/3/movie/top_rated?language={language}&page=1");
+        var client = new RestClient(options);
+        var request = new RestRequest("");
+        request.AddHeader("accept", "application/json");
+        request.AddHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwN2I3OWYxNmU2NWFmMGY1YTBjNGY4ZGFkZDdkMDhjNCIsInN1YiI6IjY0YjA0MzFjMjBlY2FmMDBjNmY2MWQ1ZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.VErhjbegJJ2tyZVP-GiDRN_gTcH_MYVhQ1wThi0Ytb0");
+        var response = await client.GetAsync(request);
+        var moviedata = JsonSerializer.Deserialize<MovieData>(response.Content!);
+        var movies = moviedata?.results.ToList();
+
+        var filteredMovies = new List<MovieDTO>();
+        for (int i = 0; i < 20; i++)
+            filteredMovies.Add(movies[i]);
+
+        var movieVM = new MovieVM()
+        {
+            Movies = filteredMovies,
+            TotalPages = 1
+        };
+
+        return Ok(movieVM);
+    }
+
     [HttpGet("GetInterestedMovies")]
     public async Task<IActionResult> GetInterestedMovies([FromQuery] int movieid, string language) {
 

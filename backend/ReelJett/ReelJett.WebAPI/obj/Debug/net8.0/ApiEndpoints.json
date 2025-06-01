@@ -514,6 +514,22 @@
   },
   {
     "ContainingType": "ReelJett.WebAPI.Controllers.MovieController",
+    "Method": "GetTopRatedMovies",
+    "RelativePath": "api/Movie/GetTopRatedMovies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "language",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReelJett.WebAPI.Controllers.MovieController",
     "Method": "GetTrailer",
     "RelativePath": "api/Movie/GetTrailer",
     "HttpMethod": "GET",
