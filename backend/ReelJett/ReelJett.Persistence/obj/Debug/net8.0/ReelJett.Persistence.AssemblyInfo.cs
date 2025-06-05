@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReelJett.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33d2b0b549d783de9d1efb716a95bb85f5391f25")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+888479c80ad38d1f3cc1448dd41403f8b8ba88c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReelJett.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReelJett.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

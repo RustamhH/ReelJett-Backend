@@ -240,7 +240,7 @@ public class AuthService : IAuthService {
             token.IsDeleted = true;
 
         var forgotPasswordToken = await _tokenService.CreateRepasswordToken(user);
-        var actionUrl = $@"http://localhost:5173/resetpassword?token={forgotPasswordToken.Token}";
+        var actionUrl = $@"https://localhost:5173/resetpassword?token={forgotPasswordToken.Token}";
         var result = await _emailService.sendMailAsync(forgotPasswordDTO.Email, "Reset Your Password", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
         var userForgotPasswordToken = new UserToken() {
