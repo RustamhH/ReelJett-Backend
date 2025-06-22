@@ -3,28 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|solutionrelative:reeljett.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\controllers\\historycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.persistence\\services\\historyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|solutionrelative:reeljett.persistence\\services\\historyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F19D171-133B-4FFC-ADE0-1DB7FBE0EBDD}|ReelJett.Domain\\ReelJett.Domain.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.domain\\dto\\useroperationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F19D171-133B-4FFC-ADE0-1DB7FBE0EBDD}|ReelJett.Domain\\ReelJett.Domain.csproj|solutionrelative:reeljett.domain\\dto\\useroperationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\controllers\\personalmoviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\controllers\\personalmoviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.persistence\\services\\personalmovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|solutionrelative:reeljett.persistence\\services\\personalmovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.persistence\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|solutionrelative:reeljett.persistence\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F19D171-133B-4FFC-ADE0-1DB7FBE0EBDD}|ReelJett.Domain\\ReelJett.Domain.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.domain\\helpers\\blobhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3F19D171-133B-4FFC-ADE0-1DB7FBE0EBDD}|ReelJett.Domain\\ReelJett.Domain.csproj|solutionrelative:reeljett.domain\\helpers\\blobhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42FD5B43-5253-47DD-8329-8F731B89C11A}|ReelJett.Persistence\\ReelJett.Persistence.csproj|solutionrelative:reeljett.persistence\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.infrastructure\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|solutionrelative:reeljett.infrastructure\\registerservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|solutionrelative:reeljett.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.infrastructure\\services\\scrapingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|solutionrelative:reeljett.infrastructure\\services\\scrapingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.infrastructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24B189FB-5B5E-40AE-9BA0-6921CC83CAD7}|ReelJett.Infrastructure\\ReelJett.Infrastructure.csproj|solutionrelative:reeljett.infrastructure\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|c:\\users\\rustamhasanli\\desktop\\reeljett-backend\\backend\\reeljett\\reeljett.webapi\\controllers\\favouritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049E15DA-4AEC-4E25-8E87-FBA60EE2DC89}|ReelJett.WebAPI\\ReelJett.WebAPI.csproj|solutionrelative:reeljett.webapi\\controllers\\favouritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,81 +86,173 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HistoryController.cs",
-              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\HistoryController.cs",
-              "RelativeDocumentMoniker": "ReelJett.WebAPI\\Controllers\\HistoryController.cs",
-              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\HistoryController.cs",
-              "RelativeToolTip": "ReelJett.WebAPI\\Controllers\\HistoryController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACEAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:53:17.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HistoryService.cs",
-              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\HistoryService.cs",
-              "RelativeDocumentMoniker": "ReelJett.Persistence\\Services\\HistoryService.cs",
-              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\HistoryService.cs",
-              "RelativeToolTip": "ReelJett.Persistence\\Services\\HistoryService.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwCwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:45:12.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "ReelJett.Persistence\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\AuthService.cs",
-              "RelativeToolTip": "ReelJett.Persistence\\Services\\AuthService.cs",
-              "ViewState": "AQIAANgAAAAAAAAAAAAYwOYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T10:28:20.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "ReelJett.WebAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Program.cs",
-              "RelativeToolTip": "ReelJett.WebAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T09:44:51.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MovieController.cs",
               "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\MovieController.cs",
               "RelativeDocumentMoniker": "ReelJett.WebAPI\\Controllers\\MovieController.cs",
               "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\MovieController.cs",
               "RelativeToolTip": "ReelJett.WebAPI\\Controllers\\MovieController.cs",
-              "ViewState": "AQIAADYBAAAAAAAAAAAcwHkAAAAFAAAA",
+              "ViewState": "AQIAABQBAAAAAAAAAAAIwCkBAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T13:15:16.423Z",
+              "WhenOpened": "2025-06-21T14:29:51.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserOperationDTO.cs",
-              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\DTO\\UserOperationDTO.cs",
-              "RelativeDocumentMoniker": "ReelJett.Domain\\DTO\\UserOperationDTO.cs",
-              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\DTO\\UserOperationDTO.cs",
-              "RelativeToolTip": "ReelJett.Domain\\DTO\\UserOperationDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "DocumentIndex": 2,
+              "Title": "PersonalMovieService.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "RelativeToolTip": "ReelJett.Persistence\\Services\\PersonalMovieService.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAiwEoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T12:54:16.587Z",
+              "WhenOpened": "2025-06-21T14:29:51.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ReelJett.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\appsettings.json",
+              "RelativeToolTip": "ReelJett.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-08T09:42:31.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ReelJett.WebAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ReelJett.WebAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T08:55:40.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BlobHandler.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\Helpers\\BlobHandler.cs",
+              "RelativeDocumentMoniker": "ReelJett.Domain\\Helpers\\BlobHandler.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Domain\\Helpers\\BlobHandler.cs",
+              "RelativeToolTip": "ReelJett.Domain\\Helpers\\BlobHandler.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAiwBAAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T09:39:32.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Persistence\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\AccountService.cs",
+              "RelativeToolTip": "ReelJett.Persistence\\Services\\AccountService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAiwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T15:11:28.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonalMovieController.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\PersonalMovieController.cs",
+              "RelativeDocumentMoniker": "ReelJett.WebAPI\\Controllers\\PersonalMovieController.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\PersonalMovieController.cs",
+              "RelativeToolTip": "ReelJett.WebAPI\\Controllers\\PersonalMovieController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwEAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T08:24:24.581Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ReelJett.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ReelJett.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAiwCMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T08:55:52.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Persistence\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Persistence\\Services\\AuthService.cs",
+              "RelativeToolTip": "ReelJett.Persistence\\Services\\AuthService.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAADgv0EAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:28:20.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RegisterServices.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\RegisterServices.cs",
+              "RelativeDocumentMoniker": "ReelJett.Infrastructure\\RegisterServices.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\RegisterServices.cs",
+              "RelativeToolTip": "ReelJett.Infrastructure\\RegisterServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T09:42:05.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "ReelJett.Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T09:43:53.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Infrastructure\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\Services\\EmailService.cs",
+              "RelativeToolTip": "ReelJett.Infrastructure\\Services\\EmailService.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T07:38:07.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ScrapingService.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\Services\\ScrapingService.cs",
+              "RelativeDocumentMoniker": "ReelJett.Infrastructure\\Services\\ScrapingService.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.Infrastructure\\Services\\ScrapingService.cs",
+              "RelativeToolTip": "ReelJett.Infrastructure\\Services\\ScrapingService.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T07:38:11.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FavouriteController.cs",
+              "DocumentMoniker": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\FavouriteController.cs",
+              "RelativeDocumentMoniker": "ReelJett.WebAPI\\Controllers\\FavouriteController.cs",
+              "ToolTip": "C:\\Users\\RustamHasanli\\Desktop\\ReelJett-Backend\\backend\\ReelJett\\ReelJett.WebAPI\\Controllers\\FavouriteController.cs",
+              "RelativeToolTip": "ReelJett.WebAPI\\Controllers\\FavouriteController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA5wDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T07:17:19.989Z"
             }
           ]
         }

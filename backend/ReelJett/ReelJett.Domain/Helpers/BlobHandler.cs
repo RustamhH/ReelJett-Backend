@@ -7,25 +7,33 @@ namespace ReelJett.Domain.Helpers
     {
         public static async Task<string> UploadToBlobStorage(byte[] file)
         {
-
-            ConfigurationBuilder configurationBuilder = new();
-            var builder = configurationBuilder.AddJsonFile("appsettings.json").Build();
-            var constr = builder.GetConnectionString("blobstorage");
-            var blobServiceClient = new BlobServiceClient(constr);
-
-            var blobContainerClient = blobServiceClient.GetBlobContainerClient("reeljettimages");
-
-            await blobContainerClient.CreateIfNotExistsAsync();
-
-            var blobClient = blobContainerClient.GetBlobClient(Guid.NewGuid().ToString());
-
-            using (var stream = new MemoryStream(file))
+            try
             {
-                await blobClient.UploadAsync(stream, overwrite: true);
-            }
+                ConfigurationBuilder configurationBuilder = new();
+                var builder = configurationBuilder.AddJsonFile("appsettings.json").Build();
+                var constr = builder.GetConnectionString("blobstorage");
+                var blobServiceClient = new BlobServiceClient(constr);
 
-            var imageUrl = blobClient.Uri.ToString();
-            return imageUrl;
+                var blobContainerClient = blobServiceClient.GetBlobContainerClient("reeljettimages");
+
+                await blobContainerClient.CreateIfNotExistsAsync();
+
+                var blobClient = blobContainerClient.GetBlobClient(Guid.NewGuid().ToString());
+
+                using (var stream = new MemoryStream(file))
+                {
+                    await blobClient.UploadAsync(stream, overwrite: true);
+                }
+
+                var imageUrl = blobClient.Uri.ToString();
+                return imageUrl;
+            }
+            catch(Exception ex)
+            {
+                await Console.Out.WriteLineAsync(ex.Message);
+                return "";
+            }
+            
         }
 
         public static async Task DeleteBlob(string blobUrl)

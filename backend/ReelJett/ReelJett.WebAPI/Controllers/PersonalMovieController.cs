@@ -56,6 +56,21 @@ public class PersonalMovieController : ControllerBase {
     }
 
 
+    [HttpGet("GetAllPersonalMovies")]
+    public async Task<IActionResult> GetAllPersonalMovies()
+    {
+
+        var movies = await _personalMovieService.GetPersonalMoviesAsync();
+        var filteredmovies = new List<GetPersonalMovieDTO>();
+        for (int i = 0; i < movies.Count; i++)
+        {
+            filteredmovies.Add(movies[i]);
+        }
+        return Ok(filteredmovies);
+    }
+
+
+
     [HttpGet("GetMyMovies")]
     public async Task<IActionResult> GetMyMovies() {
 

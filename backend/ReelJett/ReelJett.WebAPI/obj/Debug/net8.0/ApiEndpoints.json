@@ -599,6 +599,16 @@
   },
   {
     "ContainingType": "ReelJett.WebAPI.Controllers.PersonalMovieController",
+    "Method": "GetAllPersonalMovies",
+    "RelativePath": "api/PersonalMovie/GetAllPersonalMovies",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ReelJett.WebAPI.Controllers.PersonalMovieController",
     "Method": "GetMyMovies",
     "RelativePath": "api/PersonalMovie/GetMyMovies",
     "HttpMethod": "GET",
