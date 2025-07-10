@@ -1,8 +1,8 @@
-﻿using System.Security.Claims;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ReelJett.Domain.ViewModels;
 using ReelJett.Application.Services;
-using Microsoft.AspNetCore.Authorization;
+using ReelJett.Domain.ViewModels;
+using System.Security.Claims;
 
 namespace ReelJett.WebAPI.Controllers;
 

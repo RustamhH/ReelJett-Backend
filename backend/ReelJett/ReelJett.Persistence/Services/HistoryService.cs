@@ -1,6 +1,8 @@
 ﻿using ReelJett.Application.Services;
 using ReelJett.Application.Repositories;
 using ReelJett.Domain.Entities.Concretes;
+using ReelJett.Domain.ViewModels;
+using RestSharp;
 
 namespace ReelJett.Persistence.Services;
 
@@ -64,6 +66,8 @@ public class HistoryService : IHistoryService {
     }
 
     public async Task<ICollection<MovieItem>?> GetHistoryMoviesAsync(string username) {
-        return await _readHistoryListRepository.GetMoviesByUsername(username);
+
+        var originalList=await _readHistoryListRepository.GetMoviesByUsername(username);
+        return originalList;
     }
 }
