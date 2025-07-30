@@ -22,7 +22,7 @@ public class AccountController : ControllerBase {
 
     // Methods
 
-    //[Authorize]
+    [Authorize]
     [HttpPut("UpdateAccount")]
     public async Task<IActionResult> UpdateAccount(UpdateAccountDTO updateAccountDTO) {
 
@@ -33,7 +33,7 @@ public class AccountController : ControllerBase {
         else return BadRequest("Repassword token expired");
     }
 
-    //[Authorize]
+    [Authorize]
     [HttpGet("GetAccountData")]
     public async Task<IActionResult> GetAccountData() {
 

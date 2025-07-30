@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReelJett.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+279ae508489b696316ce4188e3e62122a2638135")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d29910facd1858e69c2cda2363489b2d3b95d22")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReelJett.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReelJett.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

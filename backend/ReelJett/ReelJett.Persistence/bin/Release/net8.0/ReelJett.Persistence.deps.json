@@ -15,8 +15,6 @@
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.6",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.6",
-          "Microsoft.Extensions.Configuration": "8.0.0",
-          "Microsoft.Extensions.Configuration.Json": "8.0.0",
           "ReelJett.Application": "1.0.0",
           "RestSharp": "112.0.0"
         },
@@ -1468,7 +1466,10 @@
       },
       "ReelJett.Domain/1.0.0": {
         "dependencies": {
+          "Azure.Storage.Blobs": "12.21.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.6",
+          "Microsoft.Extensions.Configuration": "8.0.0",
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {

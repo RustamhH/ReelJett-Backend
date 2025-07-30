@@ -194,7 +194,7 @@ public class AuthService : IAuthService {
     private async Task SendConfirmEmail(RegisterDTO registerDTO, User newUser) {
 
         var confirmEmailToken = _tokenService.CreateConfirmEmailToken();
-        var actionUrl = $@"https://localhost:7109/api/Auth/ConfirmEmail?token={confirmEmailToken.Token}";
+        var actionUrl = $@"https://reeljettwebapi1.azurewebsites.net/api/Auth/ConfirmEmail?token={confirmEmailToken.Token}";
         var result = await _emailService.sendMailAsync(registerDTO.Email, "Confirm Your Email", $"Confirm your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
         var userConfirmEmailToken = new UserToken() {
@@ -240,7 +240,7 @@ public class AuthService : IAuthService {
             token.IsDeleted = true;
 
         var forgotPasswordToken = await _tokenService.CreateRepasswordToken(user);
-        var actionUrl = $@"https://localhost:5173/resetpassword?token={forgotPasswordToken.Token}";
+        var actionUrl = $@"https://reeljett.com/resetpassword?token={forgotPasswordToken.Token}";
         var result = await _emailService.sendMailAsync(forgotPasswordDTO.Email, "Reset Your Password", $"Reset your password by <a href='{actionUrl}'>clicking here</a>.", true);
 
         var userForgotPasswordToken = new UserToken() {
